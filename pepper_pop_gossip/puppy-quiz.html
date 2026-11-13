@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Take the Pepper Pop puppy personality quiz and find your inner dog.">
+  <title>Which Puppy Are You? — Pepper Pop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"><script src="js/script.js" defer></script>
+</head>
+<body>
+  <div class="top-strip"><span>★ EXTRA! EXTRA! ★</span> Your daily dose of totally fictional drama <span>★ EXTRA! EXTRA! ★</span></div>
+  <header class="site-header"><a class="logo" href="index.html"><span class="logo-star">✦</span> PEPPER <span>POP!</span><small>GIRL TALK • GLITTER • GOOD TIMES</small></a><p class="header-sticker">100%<br>GIRL<br>POWER!</p></header>
+  <nav class="main-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="gossip.html">Hot Goss</a><a href="style.html">Style File</a><a class="active" href="puppy-quiz.html">Puppy Quiz</a><a href="about.html">About</a></nav>
+  <main class="page-wrap">
+    <section class="page-intro puppy-intro"><p class="eyebrow">A VERY IMPORTANT PERSONALITY INVESTIGATION</p><h1>WHICH PUPPY <span>ARE YOU?</span></h1><p class="subtitle">Big paws, bigger personality.</p><p>Answer five quick questions and discover your puppy alter ego. No barking required.</p></section>
+    <section class="quiz-layout">
+      <div class="quiz-card">
+        <div class="quiz-progress"><span id="progress-label">QUESTION 1 OF 5</span><div class="progress-track"><div id="progress-fill"></div></div></div>
+        <form id="puppy-quiz">
+          <fieldset class="quiz-question" data-question="0"><legend>1. Your perfect Saturday looks like...</legend>
+            <label><input type="radio" name="q0" value="golden" required><span>☀️ Outside with friends, soaking up the sunshine.</span></label>
+            <label><input type="radio" name="q0" value="poodle"><span>💅 Getting dressed up and being a little fabulous.</span></label>
+            <label><input type="radio" name="q0" value="corgi"><span>🍿 Snacks, comfort and a cosy movie marathon.</span></label>
+            <label><input type="radio" name="q0" value="chihuahua"><span>🎤 Making plans, taking charge and being iconic.</span></label>
+          </fieldset>
+          <fieldset class="quiz-question" data-question="1" hidden><legend>2. Your friends would describe you as...</legend>
+            <label><input type="radio" name="q1" value="golden" required><span>Warm, loyal and everyone's cheerleader.</span></label>
+            <label><input type="radio" name="q1" value="poodle"><span>Creative, polished and a trend-setter.</span></label>
+            <label><input type="radio" name="q1" value="corgi"><span>Funny, sweet and secretly the boss.</span></label>
+            <label><input type="radio" name="q1" value="chihuahua"><span>Fearless, outspoken and full of sparkle.</span></label>
+          </fieldset>
+          <fieldset class="quiz-question" data-question="2" hidden><legend>3. Pick your dream accessory.</legend>
+            <label><input type="radio" name="q2" value="golden" required><span>🌼 A sunny yellow tote bag.</span></label>
+            <label><input type="radio" name="q2" value="poodle"><span>🎀 A fluffy pink hair bow.</span></label>
+            <label><input type="radio" name="q2" value="corgi"><span>🧸 A super-soft oversized hoodie.</span></label>
+            <label><input type="radio" name="q2" value="chihuahua"><span>💎 A statement pair of sunglasses.</span></label>
+          </fieldset>
+          <fieldset class="quiz-question" data-question="3" hidden><legend>4. At a party, you are usually...</legend>
+            <label><input type="radio" name="q3" value="golden" required><span>Making sure everyone is having a good time.</span></label>
+            <label><input type="radio" name="q3" value="poodle"><span>Serving looks and finding the best playlist.</span></label>
+            <label><input type="radio" name="q3" value="corgi"><span>Finding the snacks and making people laugh.</span></label>
+            <label><input type="radio" name="q3" value="chihuahua"><span>Starting the dance floor. Obviously.</span></label>
+          </fieldset>
+          <fieldset class="quiz-question" data-question="4" hidden><legend>5. Choose your personal motto.</legend>
+            <label><input type="radio" name="q4" value="golden" required><span>“Be kind and spread sunshine.”</span></label>
+            <label><input type="radio" name="q4" value="poodle"><span>“A little extra is never too much.”</span></label>
+            <label><input type="radio" name="q4" value="corgi"><span>“Good vibes and good snacks.”</span></label>
+            <label><input type="radio" name="q4" value="chihuahua"><span>“Small package, main character energy.”</span></label>
+          </fieldset>
+          <p id="quiz-error" class="quiz-error" role="alert" aria-live="polite"></p>
+          <div class="quiz-controls"><button type="button" class="sticker-button" id="prev-question" hidden>← BACK</button><button type="button" class="sticker-button" id="next-question">NEXT →</button><button type="submit" class="sticker-button" id="show-result" hidden>REVEAL MY PUP! ✦</button></div>
+        </form>
+        <div id="quiz-result" class="quiz-result" hidden aria-live="polite">
+          <p class="eyebrow">YOUR PUPPY ALTER EGO IS...</p><img id="result-image" src="" alt=""><h2 id="result-name"></h2><p id="result-description"></p><button type="button" class="sticker-button" id="restart-quiz">TAKE IT AGAIN ↻</button>
+        </div>
+      </div>
+      <aside class="quiz-side"><img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=900&q=85" alt="Two happy dogs playing outdoors"><h2>Bestie, unleash your vibe!</h2><p>This quiz is just for fun — your result is a playful personality match, not a real personality assessment.</p><span class="paw-doodle">🐾 🐾 🐾</span></aside>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="footer-logo" href="index.html">PEPPER POP!</a><p>Made with ♥, lip gloss and a suspicious amount of glitter.</p><p class="footer-small">© 2026 Pepper Pop Magazine • Quiz results are for entertainment only.</p></footer>
+</body>
+</html>
